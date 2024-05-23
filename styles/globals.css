@@ -1,0 +1,115 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+.h1-tag {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+
+.h2-tag {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.h3-tag {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.h4-tag {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.h5-tag {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.body-large-tag {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.body-medium-tag {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.body-small-tag {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.body-very-small-tag {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.orange-gradient {
+  background: linear-gradient(to top, #fa541c, #ff7d51);
+}
+
+.grey-gradient {
+  background: linear-gradient(to top, #b6b6b6, #e8e8e8);
+}
+
+.purple-gradient {
+  background: linear-gradient(to top, #5e13e5, #934dff);
+}
+
+.blackish-gradient {
+  background: linear-gradient(to top, #282852, #131316);
+}
+
+.neutral-100 {
+  color: #1d1d1d;
+}
+
+.neutral-80 {
+  color: #727272;
+}
+
+.neutral-70 {
+  color: #afafaf;
+}
+
+.neutral-60 {
+  color: #d8d8d8;
+}
+
+.neutral-40 {
+  color: #e8e8e8;
+}
+
+.orange {
+  color: #fa541c;
+}
+
+.purple {
+  color: #5e13e5;
+}
+
+.blackish {
+  color: #131316;
+}
