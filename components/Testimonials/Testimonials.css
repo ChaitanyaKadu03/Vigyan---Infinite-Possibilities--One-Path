@@ -1,0 +1,21 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 72px 128px;
+}
+
+.testimonials-p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonials-p2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+    align-items: center;
+}

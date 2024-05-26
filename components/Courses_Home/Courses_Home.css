@@ -1,0 +1,64 @@
+.courses-home {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 72px 0px 72px 128px;
+}
+
+.courses-home-p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cht-p1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 128px;
+}
+
+.cht-p1 div {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.cht-p1 div img {
+  height: 24px;
+  width: 24px;
+}
+
+.cht-p1 div button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cht-p1 div button:first-child img {
+  transform: rotate(-90deg);
+}
+.cht-p1 div button:last-child img {
+  transform: rotate(90deg);
+}
+
+.courses-home-p2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chp2-coming-home {
+  height: fit-content;
+  width: 128px;
+  opacity: 0.4;
+}
+
+.chp2-div-span {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(to left, #ffffff, #ffffff00);
+  position: absolute;
+  right: 0;
+}

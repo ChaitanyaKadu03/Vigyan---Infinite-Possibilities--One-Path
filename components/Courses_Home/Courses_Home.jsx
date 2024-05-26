@@ -17,8 +17,12 @@ const Courses_Home = () => {
             Comprehensive Physics Courses Tailored for JEE, NEET, and Beyond
           </p>
           <div>
-            <Image src={arrow} alt="arrow icon" />
-            <Image src={arrow} alt="arrow icon" />
+            <button>
+              <Image src={arrow} alt="arrow icon" />
+            </button>
+            <button>
+              <Image src={arrow} alt="arrow icon" />
+            </button>
           </div>
         </div>
       </div>
@@ -26,7 +30,10 @@ const Courses_Home = () => {
         <Course_Card_T1 num={1} />
         <Course_Card_T1 num={2} />
         <Course_Card_T1 num={3} />
-        <Image src={coming_soon} alt="Image" className="chp2-coming-home" />
+        <div>
+          <Image src={coming_soon} alt="Image" className="chp2-coming-home" />
+          <span className='chp2-div-span'/>
+        </div>
       </div>
     </div>
   );

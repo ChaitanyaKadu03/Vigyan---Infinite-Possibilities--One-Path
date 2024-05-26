@@ -8,7 +8,6 @@ import clock from '../../public/assets/clock.svg';
 import level from '../../public/assets/level.svg';
 
 const Course_Card_T1 = ({ num }) => {
-  console.log(num);
   return (
     // <div className="course-card-t1">
     //   <Image src={data.banner} alt="Course " priority />
@@ -44,7 +43,7 @@ const Course_Card_T1 = ({ num }) => {
       <Image src={banner} alt="Course " className="cct1-banner" priority />
       <div className="course-card-t1-bottom">
         <div className="cct1b-p1">
-          <p className="body-small-tag"></p>
+          <p className="body-small-tag">Physics</p>
           <p className="h5-tag">Free</p>
         </div>
         <h5 className="h5-tag blackish">Basics of Physics</h5>

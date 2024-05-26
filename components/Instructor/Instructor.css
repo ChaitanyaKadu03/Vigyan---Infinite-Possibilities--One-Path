@@ -1,0 +1,56 @@
+.instructor-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 72px 128px;
+}
+
+.instructor-div-p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.instructor-div-p2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.idp2-img {
+  height: 360px;
+  width: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.idp2-div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.idp2-div-p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.idp2-div-p2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.idp2-div-p2 button {
+  background: none;
+  border: none;
+}
+
+.idp2-div-p2 button img {
+  height: fit-content;
+  width: 24px;
+  object-fit: cover;
+}
