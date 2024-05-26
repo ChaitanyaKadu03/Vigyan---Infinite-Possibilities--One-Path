@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import icon from './favicon.ico';
 
 export const metadata = {
   title: 'Vigyan - Infinite Possibilities, One Path',

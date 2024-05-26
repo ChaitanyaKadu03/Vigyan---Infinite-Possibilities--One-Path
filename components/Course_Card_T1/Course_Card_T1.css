@@ -1,0 +1,111 @@
+.course-card-t1 {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  cursor: pointer;
+  box-shadow: rgba(119, 119, 119, 0.28) 0 4px 16px;
+}
+
+.course-card-t1:hover {
+    box-shadow: rgba(119, 119, 119, 0.28) 0 6px 24px;
+}
+
+.cct1-banner {
+  height: 260px;
+  width: 340px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.course-card-t1-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cct1b-p1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cct1b-p1 p:first-child {
+  color: #fa541c;
+}
+
+.cct1b-p1 p:last-child {
+  color: #5e13e5;
+}
+
+.cct1b-p2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.cct1b-p2 div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.cct1b-p2-star {
+  height: 24px;
+  width: fit-content;
+}
+
+.cct1b-p2-line {
+  height: 16px;
+  width: 0.6px;
+  background-color: #afafaf8b;
+}
+
+.cct1b-p3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.cct1b-p3 img {
+  height: 64px;
+  width: 64px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.cct1b-line {
+  height: 0.6px;
+  width: 100%;
+  background-color: #afafaf5e;
+}
+
+.cct1b-p4 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.cct1b-p4 div {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.cct1b-p4-clock {
+  height: 24px;
+  width: 24px;
+}
+
+.cct1b-p4-level {
+  height: 24px;
+  width: 24px;
+}
