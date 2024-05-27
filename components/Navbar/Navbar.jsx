@@ -1,18 +1,22 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../public/assets/Logo/Transparent/Logo-Transparent(1).png';
 
 const Navbar = ({ id }) => {
+  let [name, setName] = useState('chai');
+  useEffect(() => {
+    console.log(name);
+  });
   const nav_mid_btns_list = [
     { id: 1, btn: 'Home', link: '/' },
-    { id: 2, btn: 'Course', link: '/' },
-    { id: 3, btn: 'About Us', link: '/' },
-    { id: 4, btn: 'Testimonials', link: '/' },
-    { id: 5, btn: 'Contact Now', link: '/' },
-    { id: 6, btn: 'FAQs', link: '/' }
+    { id: 2, btn: 'Course', link: '/courses' },
+    { id: 3, btn: 'About Us', link: '/about-us' },
+    { id: 4, btn: 'Testimonials', link: '/testimonials' },
+    { id: 5, btn: 'Contact Now', link: '/contact' },
+    { id: 6, btn: 'FAQs', link: '/faqs' }
   ];
 
   let nav_mid_btns = [];
@@ -32,7 +36,7 @@ const Navbar = ({ id }) => {
 
   return (
     <nav>
-      <Image src={Logo} alt="Vigyan logo" priority />
+      <Image src={Logo} alt="Vigyan logo" />
       <div>
         {nav_mid_btns.map((data) => (
           <Link

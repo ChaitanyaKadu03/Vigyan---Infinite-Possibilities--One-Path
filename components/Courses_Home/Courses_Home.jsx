@@ -6,8 +6,7 @@ import coming_soon from '../../public/assets/coming-soon.svg';
 import Course_Card_T1 from '@components/Course_Card_T1/Course_Card_T1';
 
 const Courses_Home = () => {
-  console.log(22);
-  const course_cards_data = [{ id: 1 }, { id: 2 }, { id: 3 }];
+  let course_card_list = [{ id: 0 }, { id: 1 }, { id: 2 }];
   return (
     <div className="courses-home">
       <div className="courses-home-p1">
@@ -27,12 +26,12 @@ const Courses_Home = () => {
         </div>
       </div>
       <div className="courses-home-p2">
-        <Course_Card_T1 num={1} />
-        <Course_Card_T1 num={2} />
-        <Course_Card_T1 num={3} />
+        {course_card_list.map((num) => (
+          <Course_Card_T1 id={num.id} />
+        ))}
         <div>
           <Image src={coming_soon} alt="Image" className="chp2-coming-home" />
-          <span className='chp2-div-span'/>
+          <span className="chp2-div-span" />
         </div>
       </div>
     </div>

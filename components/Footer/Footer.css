@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  width: 72%;
 }
 
 .fp1p1d-div div p:first-child {

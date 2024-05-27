@@ -1,0 +1,59 @@
+.course-hero {
+  gap: 48px;
+}
+
+.ph-p1-p1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.ph-p1-p1 img {
+  height: 24px;
+  width: 24px;
+}
+
+.ph-p1-p1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.ph-p1-p1 span {
+  height: 24px;
+  width: 0.6px;
+  background-color: #e8e8e85c;
+}
+
+.ph-p1-span {
+  height: 0.6px;
+  width: 10%;
+  background-color: #e8e8e85c;
+}
+
+.ph-p1-p2 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.ph-p1-p2 div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.ph-p1-p2 div img {
+  height: 24px;
+  width: 24px;
+}
+
+.course-hero-p2 img {
+  height: 400px;
+  width: 480px;
+  object-fit: cover;
+}

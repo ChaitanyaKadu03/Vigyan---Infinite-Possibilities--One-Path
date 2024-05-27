@@ -8,6 +8,7 @@ import linkedin from '../../public/assets/linkedin-white.svg';
 import x from '../../public/assets/x-white.svg';
 import gmail from '../../public/assets/gmail-white.svg';
 import banner1 from '../../public/assets/course_1.jpg';
+import Course_Card_Data from '@components/Data/Course_Card_Data';
 
 const Footer = () => {
   return (
@@ -30,33 +31,17 @@ const Footer = () => {
         <div className="fp1-p2">
           <h4 className="h4-tag">Courses</h4>
           <div className="fp1p2-div">
-            <div className="fp1p1d-div">
-              <Image src={banner1} alt="course banner" />
-              <div>
-                <p className="body-medium-tag">Basics of Physics</p>
-                <p className="body-small-tag neutral-70">
-                  Building a Strong Foundation for Advanced Learning
-                </p>
+            {Course_Card_Data.map((data) => (
+              <div className="fp1p1d-div" key={data.id}>
+                <Image src={data.poster} alt="course banner" />
+                <div>
+                  <p className="body-medium-tag">{data.heading}</p>
+                  <p className="body-small-tag neutral-70">
+                    {data.sub_heading}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="fp1p1d-div">
-              <Image src={banner1} alt="course banner" />
-              <div>
-                <p className="body-medium-tag">Basics of Physics</p>
-                <p className="body-small-tag neutral-70">
-                  Building a Strong Foundation for Advanced Learning
-                </p>
-              </div>
-            </div>
-            <div className="fp1p1d-div">
-              <Image src={banner1} alt="course banner" />
-              <div>
-                <p className="body-medium-tag">Basics of Physics</p>
-                <p className="body-small-tag neutral-70">
-                  Building a Strong Foundation for Advanced Learning
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className="fp1-p3">
@@ -100,7 +85,9 @@ const Footer = () => {
       </div>
       <span className="footer-p-line" />
       <div className="footer-p2">
-        <p className="body-medium-tag neutral-70">© 2024 Vigyan. All rights reserved.</p>
+        <p className="body-medium-tag neutral-70">
+          © 2024 Vigyan. All rights reserved.
+        </p>
         <div>
           <Image src={instagram} alt="icon" />
           <Image src={gmail} alt="icon" />
