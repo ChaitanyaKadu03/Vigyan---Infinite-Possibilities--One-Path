@@ -15,7 +15,7 @@ import Course_Curriculum_Data from '@components/Data/Course_Curriculum_Data';
 const Curriculum = ({ id }) => {
   let data = Course_Curriculum_Data[id];
   return (
-    <div className="curriculum">
+    <div className="curriculum standard-padding">
       <div className="curriculum-p1">
         <div className="cp1-p1">
           <div className="cp1p1-p1">
@@ -71,9 +71,7 @@ const Curriculum = ({ id }) => {
                     <div>
                       <Image src={youtube_grey} alt="icon" />
                       <p className="body-large-tag grey">1.1</p>
-                      <p className="body-large-tag grey">
-                        {prompt.title}
-                      </p>
+                      <p className="body-large-tag grey">{prompt.title}</p>
                     </div>
                     <p className="body-large-tag grey">{prompt.time}</p>
                   </div>

@@ -5,7 +5,7 @@ import Testimonials_Data from '@components/Data/Testimonials_Data';
 
 const Testimonials = () => {
   return (
-    <div className="testimonials">
+    <div className="testimonials standard-padding">
       <div className="testimonials-p1">
         <h3 className="h3-tag neutral-100">Testimonials</h3>
         <p className="body-medium-tag neutral-70">

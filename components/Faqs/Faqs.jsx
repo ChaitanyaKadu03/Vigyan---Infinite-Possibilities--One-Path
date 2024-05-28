@@ -6,7 +6,7 @@ import Faqs_Data from '@components/Data/Faqs_Data';
 
 const Faqs = () => {
   return (
-    <div className="faqs">
+    <div className="faqs standard-padding">
       <div className="faqs-p1">
         <h3 className="h3-tag neutral-100">Frequently asked questions</h3>
         <p className="body-medium-tag neutral-70">

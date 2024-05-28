@@ -1,7 +1,6 @@
 .curriculum {
   display: flex;
   flex-direction: row;
-  padding: 72px 128px;
   gap: 24px;
 }
 
@@ -10,7 +9,11 @@
   flex-direction: column;
   gap: 40px;
   padding: 40px;
-  width: 720px;
+  width: 68%;
+  max-width: 900px;
+  border-radius: 12px;
+  border: #dfdfdfbd solid 0.6px;
+  box-shadow: #dfdfdfe1 0px 0px 24px;
 }
 
 .cp1-p1 {
@@ -107,8 +110,8 @@
 }
 
 .cp1p2p1p1-div2 img {
-    height: 16px;
-    width: 16px;
+  height: 16px;
+  width: 16px;
 }
 
 .cp1p2p1p1-div2 div {
@@ -157,6 +160,10 @@
   padding: 36px;
   gap: 32px;
   width: fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  border: #dfdfdfbd solid 0.6px;
+  box-shadow: #dfdfdfe1 0px 0px 24px;
 }
 
 .cp2-p1 {
@@ -181,4 +188,303 @@
 .cp2p1-div div img {
   height: 24px;
   width: 24px;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .curriculum {
+    gap: 8px;
+  }
+  .curriculum-p1 {
+    gap: 40px;
+    padding: 32px;
+    width: 64%;
+  }
+  .cp1-p1 {
+    gap: 24px;
+  }
+  .cp1p1-p1 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p1-p2 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p1p2-div {
+    gap: 4px;
+  }
+  .cp1p1p2-div2 {
+    gap: 16px;
+  }
+  .cp1p1p2-div2 div {
+    gap: 4px;
+  }
+  .cp1-p2 {
+    gap: 24px;
+  }
+  .cp1p2-p1 {
+    gap: 8px;
+  }
+  .cp1p2p1-p1 {
+    padding: 24px 32px;
+    border-radius: 12px;
+  }
+  .cp1p2p1p1-div {
+    gap: 16px;
+  }
+  .cp1p2p1p1-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p1-div2 {
+    gap: 16px;
+  }
+  .cp1p2p1p1-div2 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p1-div2 div {
+    gap: 4px;
+  }
+  .divcp1p2p1p1-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1-p2 {
+    gap: 16px;
+    padding: 24px 32px;
+    border-radius: 12px;
+  }
+  .cp1p2p1p2-div {
+    gap: 24px;
+  }
+  .cp1p2p1p2-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p2-div div {
+    gap: 12px;
+  }
+  .curriculum-p2 {
+    padding: 28px;
+    gap: 32px;
+  }
+  .cp2-p1 {
+    gap: 16px;
+  }
+  .cp2p1-div {
+    gap: 8px;
+  }
+  .cp2p1-div div {
+    gap: 12px;
+  }
+  .cp2p1-div div img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .curriculum {
+    gap: 40px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .curriculum-p1 {
+    gap: 40px;
+    padding: 32px;
+    width: 100%;
+  }
+  .cp1-p1 {
+    gap: 16px;
+  }
+  .cp1p1-p1 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p1-p2 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p1p2-div {
+    gap: 4px;
+  }
+  .cp1p1p2-div2 {
+    gap: 16px;
+  }
+  .cp1p1p2-div2 div {
+    gap: 4px;
+  }
+  .cp1-p2 {
+    gap: 16px;
+  }
+  .cp1p2-p1 {
+    gap: 0px;
+  }
+  .cp1p2p1-p1 {
+    padding: 24px 32px;
+    border-radius: 12px;
+  }
+  .cp1p2p1p1-div {
+    gap: 16px;
+  }
+  .cp1p2p1p1-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p1-div2 {
+    gap: 16px;
+  }
+  .cp1p2p1p1-div2 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p1-div2 div {
+    gap: 4px;
+  }
+  .divcp1p2p1p1-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1-p2 {
+    gap: 16px;
+    padding: 24px 32px;
+    border-radius: 12px;
+  }
+  .cp1p2p1p2-div {
+    gap: 24px;
+  }
+  .cp1p2p1p2-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p2-div div {
+    gap: 12px;
+  }
+  .curriculum-p2 {
+    padding: 28px;
+    gap: 32px;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-between;
+  }
+  .cp2-p1 {
+    gap: 16px;
+  }
+  .cp2p1-div {
+    gap: 8px;
+  }
+  .cp2p1-div div {
+    gap: 12px;
+  }
+  .cp2p1-div div img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .curriculum {
+    gap: 32px;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .curriculum-p1 {
+    gap: 24px;
+    padding: 24px 12px ;
+    width: 100%;
+  }
+  .cp1-p1 {
+    gap: 16px;
+  }
+  .cp1p1-p1 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p1-p2 img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p1p2-div {
+    gap: 4px;
+  }
+  .cp1p1p2-div2 {
+    gap: 16px;
+  }
+  .cp1p1p2-div2 div {
+    gap: px;
+  }
+  .cp1p1p2-div2 div:first-child {
+    display: none;
+  }
+  .cp1-p2 {
+    gap: 16px;
+  }
+  .cp1p2-p1 {
+    gap: 0px;
+  }
+  .cp1p2p1-p1 {
+    padding: 12px 12px;
+    border-radius: 8px;
+  }
+  .cp1p2p1p1-div {
+    gap: 4px;
+  }
+  .cp1p2p1p1-div img {
+    height: 12px;
+    width: 12px;
+  }
+  .cp1p2p1p1-div2 {
+    gap: 8px;
+  }
+  .cp1p2p1p1-div2 img {
+    height: 12px;
+    width: 12px;
+  }
+  .cp1p2p1p1-div2 div {
+    gap: 4px;
+  }
+  .cp1p2p1p1-div2 div:last-child {
+    display: none;
+  }
+  .divcp1p2p1p1-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1-p2 {
+    gap: 12px;
+    padding: 16px 4px;
+    border-radius: 4px;
+  }
+  .cp1p2p1p2-div {
+    gap: 16px;
+  }
+  .cp1p2p1p2-div img {
+    height: 16px;
+    width: 16px;
+  }
+  .cp1p2p1p2-div div {
+    gap: 8px;
+  }
+  .curriculum-p2 {
+    padding: 28px;
+    gap: 24px;
+  }
+  .cp2-p1 {
+    gap: 16px;
+  }
+  .cp2p1-div {
+    gap: 8px;
+  }
+  .cp2p1-div div {
+    gap: 12px;
+  }
+  .cp2p1-div div img {
+    height: 16px;
+    width: 16px;
+  }
 }

@@ -26,7 +26,7 @@ const Pages_Hero_Data = [
   {
     id: 4,
     Heading: `Explore Our <span className='grey-gradient-font'>Comprehensive</span> <span className='orange-gradient-font'>Physics</span> Courses`,
-    Paragraph: `Discover a variety of expertly designed physics courses tailored to help you excel in JEE Main, JEE Advanced, NEET, and your Class 11th and 12th studies. With Vigyan, you can build a strong foundation and achieve academic excellence.`,
+    Paragraph: `Explore our physics courses to excel in JEE, NEET, and Class 11th and 12th. Vigyan helps you build a strong foundation and achieve academic success.`,
     poster: courses
   },
   {

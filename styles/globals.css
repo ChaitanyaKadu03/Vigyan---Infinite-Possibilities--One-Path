@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+.standard-padding {
+  padding: 72px 128px;
+}
+
 .h1-tag {
   font-size: 64px;
   font-weight: 600;
@@ -83,7 +87,7 @@
   background: linear-gradient(to top, #282852, #131316);
 }
 
-.orange-gradient-font{
+.orange-gradient-font {
   background: linear-gradient(to top, #fa541c, #ff7d51);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -126,3 +130,115 @@
 .blackish {
   color: #131316;
 }
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+  .standard-padding {
+    padding: 56px 64px;
+  }
+  .h1-tag {
+    font-size: 48px;
+  }
+
+  .h2-tag {
+    font-size: 28px;
+  }
+
+  .h3-tag {
+    font-size: 24px;
+  }
+
+  .h4-tag {
+    font-size: 20px;
+  }
+
+  .h5-tag {
+    font-size: 16px;
+  }
+
+  .body-large-tag {
+    font-size: 16px;
+  }
+
+  .body-medium-tag {
+    font-size: 14px;
+  }
+
+  .body-small-tag {
+    font-size: 12px;
+  }
+
+  .body-very-small-tag {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .standard-padding {
+    padding: 40px 18px;
+  }
+  .h1-tag {
+    font-size: 40px;
+  }
+
+  .h2-tag {
+    font-size: 24px;
+  }
+
+  .h3-tag {
+    font-size: 20px;
+  }
+
+  .h4-tag {
+    font-size: 16px;
+  }
+
+  .h5-tag {
+    font-size: 14px;
+  }
+
+  .body-large-tag {
+    font-size: 14px;
+  }
+
+  .body-medium-tag {
+    font-size: 14px;
+  }
+
+  .body-small-tag {
+    font-size: 12px;
+  }
+
+  .body-very-small-tag {
+    font-size: 10px;
+  }
+}
+
+/* Set A */
+
+/* 
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+}
+
+@media (max-width: 600px) {
+} */
+
+/* Set B */
+
+/* 
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+}
+
+@media (max-width: 600px) {
+} */

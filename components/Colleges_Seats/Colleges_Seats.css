@@ -32,7 +32,12 @@
 }
 
 .white-gradient-clg-to-r {
-  background: linear-gradient(to right, #ffffff 0%, #ffffff1c 40%, #ffffff00 50%);
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff1c 40%,
+    #ffffff00 50%
+  );
   position: absolute;
   height: 80px;
   width: 100%;
@@ -43,7 +48,12 @@
 }
 
 .white-gradient-clg-to-l {
-  background: linear-gradient(to left, #ffffff 0%, #ffffff1c 40%, #ffffff00 50%);
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #ffffff1c 40%,
+    #ffffff00 50%
+  );
   position: absolute;
   height: 80px;
   width: 100%;
@@ -75,4 +85,155 @@
   height: 80px;
   width: fit-content;
   filter: saturate(0);
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .colleges_seats {
+    gap: 40px;
+    padding: 64px 0px;
+    margin: 0 64px;
+  }
+  .colleges_seats div {
+    gap: 64px;
+    width: calc(100vw - 128px);
+  }
+  @keyframes images_slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-128%);
+    }
+  }
+  .white-gradient-clg-to-r {
+    height: 80px;
+    width: 100%;
+  }
+  .white-gradient-clg-to-l {
+    height: 80px;
+    width: 100%;
+  }
+  @keyframes slider_gra_to_r {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(128%);
+    }
+  }
+  @keyframes slider_gra_to_l {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(128%);
+    }
+  }
+  .colleges_seats div img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .colleges_seats {
+    gap: 40px;
+    padding: 56px 0px;
+    margin: 0 64px;
+  }
+  .colleges_seats div {
+    gap: 64px;
+    width: calc(100vw - 36px);
+  }
+  @keyframes images_slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-154%);
+    }
+  }
+  .white-gradient-clg-to-r {
+    height: 72px;
+    width: 100%;
+  }
+  .white-gradient-clg-to-l {
+    height: 72px;
+    width: 100%;
+  }
+  @keyframes slider_gra_to_r {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(154%);
+    }
+  }
+  @keyframes slider_gra_to_l {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(154%);
+    }
+  }
+  .colleges_seats div img {
+    height: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  .colleges_seats {
+    gap: 24px;
+    padding: 56px 0px;
+    margin: 0 18px;
+  }
+  .colleges_seats h5 {
+    text-align: center;
+    width: 280px;
+  }
+  .colleges_seats div {
+    gap: 40px;
+    width: calc(100vw - 36px);
+    animation: images_slide 24s infinite linear;
+  }
+  @keyframes images_slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-308%);
+    }
+  }
+  .white-gradient-clg-to-r {
+    height: 72px;
+    width: 100%;
+    animation: slider_gra_to_r 24s infinite linear;
+  }
+  .white-gradient-clg-to-l {
+    height: 72px;
+    width: 100%;
+    animation: slider_gra_to_l 24s infinite linear;
+  }
+  @keyframes slider_gra_to_r {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(308%);
+    }
+  }
+  @keyframes slider_gra_to_l {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(308%);
+    }
+  }
+  .colleges_seats div img {
+    height: 72px;
+  }
 }

@@ -47,6 +47,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: calc(100vw - 152px);
+  padding: 24px 0px 24px 24px;
+  height: fit-content;
+  overflow: hidden;
+  gap: 24px;
 }
 
 .chp2-coming-home {
@@ -57,8 +62,107 @@
 
 .chp2-div-span {
   height: 200px;
-  width: 200px;
+  width: 40%;
   background: linear-gradient(to left, #ffffff, #ffffff00);
   position: absolute;
   right: 0;
+}
+
+@media (min-width: 1200px) {
+  .courses-home-p2 {
+    width: calc(100vw - 172px);
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .courses-home {
+    gap: 12px;
+    padding: 64px 0px 64px 64px;
+  }
+  .courses-home-p1 {
+    gap: 16px;
+  }
+  .cht-p1 {
+    padding-right: 64px;
+  }
+  .cht-p1 div {
+    gap: 16px;
+  }
+  .cht-p1 div img {
+    height: 20px;
+    width: 20px;
+  }
+  .courses-home-p2 {
+    width: calc(100vw - 92px);
+    overflow: hidden;
+    padding: 24px 0px 24px 24px;
+    gap: 24px;
+  }
+  .chp2-coming-home {
+    width: 128px;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .courses-home {
+    gap: 12px;
+    padding: 18px 0px 18px 18px;
+  }
+  .courses-home-p1 {
+    gap: 16px;
+  }
+  .cht-p1 {
+    padding-right: 18px;
+  }
+  .cht-p1 div {
+    gap: 16px;
+  }
+  .cht-p1 div img {
+    height: 20px;
+    width: 20px;
+  }
+  .courses-home-p2 {
+    width: calc(100vw - 36px);
+    padding: 16px 0px 16px 16px;
+    gap: 20px;
+  }
+  .chp2-coming-home {
+    width: 128px;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-home {
+    gap: 28px;
+    padding: 18px;
+  }
+  .courses-home-p1 {
+    gap: 14px;
+    align-items: center;
+    text-align: center;
+  }
+  .cht-p1 {
+    padding-right: 18px;
+    width: 280px;
+  }
+  .cht-p1 div {
+    display: none;
+    gap: 0px;
+  }
+  .cht-p1 div img {
+    height: 20px;
+    width: 20px;
+  }
+  .courses-home-p2 {
+    width: calc(100vw - 36px);
+    padding: 0;
+    flex-direction: column;
+  }
+  .chp2-coming-home {
+    width: 128px;
+    opacity: 0.4;
+    display: none;
+  }
 }

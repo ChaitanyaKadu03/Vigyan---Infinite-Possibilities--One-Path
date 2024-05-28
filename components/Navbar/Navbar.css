@@ -8,13 +8,22 @@ nav {
   padding: 12px 128px;
 }
 
-nav img {
+.nav-menu {
+  height: 40px;
+  width: 48px;
+  padding: 4px 8px;
+  background: linear-gradient(to top, #5e13e5, #934dff);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-logo {
   height: 64px;
   width: fit-content;
   cursor: pointer;
 }
 
-nav div:nth-child(2) {
+.nav-p2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,24 +36,24 @@ nav div:nth-child(2) {
   cursor: pointer;
 }
 
-nav div:nth-child(3) {
+.nav-p3 {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 24px;
 }
 
-nav div:nth-child(3) button {
+.nav-p3 button {
   cursor: pointer;
 }
 
-nav div:nth-child(3) button:first-child {
+.nav-p3 button:first-child {
   background: none;
   border: none;
   color: #e8e8e8;
 }
 
-nav div:nth-child(3) button:last-child {
+.nav-p3 button:last-child {
   background: linear-gradient(45deg, #5e13e5, #934dff);
   background-size: 400% 400%;
   border: #9872db solid 0.4px;
@@ -54,7 +63,7 @@ nav div:nth-child(3) button:last-child {
   box-shadow: #afafaf2e 0px 4px 16px;
 }
 
-nav div:nth-child(3) button:last-child:hover {
+.nav-p3 button:last-child:hover {
   animation: btn_background_gradient infinite linear 3s;
   box-shadow: #e8e8e81d 0px 4px 12px;
 }
@@ -68,5 +77,73 @@ nav div:nth-child(3) button:last-child:hover {
   }
   100% {
     background-position: 140% 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  nav {
+    padding: 12px 64px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-logo {
+    height: 56px;
+  }
+  .nav-p2 {
+    gap: 20px;
+  }
+  .nav-p3 {
+    gap: 20px;
+  }
+  .nav-p3 button:last-child {
+    padding: 8px 24px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  nav {
+    padding: 12px 64px;
+  }
+  .nav-menu {
+    height: 32px;
+    width: 36px;
+  }
+  .nav-logo {
+    height: 54px;
+  }
+  .nav-p2 {
+    display: none;
+  }
+  .nav-p3 {
+    gap: 20px;
+  }
+  .nav-p3 button:last-child {
+    padding: 8px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 12px 18px;
+  }
+  .nav-menu {
+    height: 24px;
+    width: 24px;
+  }
+  .nav-logo {
+    height: 44px;
+  }
+  .nav-p2 {
+    display: none;
+  }
+  .nav-p3 {
+    display: none;
   }
 }

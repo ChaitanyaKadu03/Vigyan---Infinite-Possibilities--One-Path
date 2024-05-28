@@ -4,12 +4,9 @@ import './Navbar.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../public/assets/Logo/Transparent/Logo-Transparent(1).png';
+import menu from '../../public/assets/menu.svg'
 
 const Navbar = ({ id }) => {
-  let [name, setName] = useState('chai');
-  useEffect(() => {
-    console.log(name);
-  });
   const nav_mid_btns_list = [
     { id: 1, btn: 'Home', link: '/' },
     { id: 2, btn: 'Course', link: '/courses' },
@@ -36,8 +33,9 @@ const Navbar = ({ id }) => {
 
   return (
     <nav>
-      <Image src={Logo} alt="Vigyan logo" />
-      <div>
+      <Image src={menu} alt="menu icon" className='nav-menu'/>
+      <Image src={Logo} alt="Vigyan logo" className='nav-logo'/>
+      <div className='nav-p2'>
         {nav_mid_btns.map((data) => (
           <Link
             key={data.id}
@@ -52,7 +50,7 @@ const Navbar = ({ id }) => {
           </Link>
         ))}
       </div>
-      <div>
+      <div className='nav-p3'>
         <button className="body-medium-tag">Log In</button>
         <button className="body-medium-tag">Sign Up</button>
       </div>

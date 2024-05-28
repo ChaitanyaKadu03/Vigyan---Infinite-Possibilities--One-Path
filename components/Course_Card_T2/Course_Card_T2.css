@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 10px;
-  width: 272px;
+  width: 28%;
   border-radius: 12px;
   border: 0.4px solid #b9b9b94b;
   box-shadow: 0 2px 16px #b9b9b94b;
@@ -11,7 +11,7 @@
 }
 
 .cct2-poster {
-  width: 272px;
+  width: 100%;
   height: 225px;
   object-fit: cover;
   border-top-left-radius: 12px;
@@ -47,4 +47,88 @@
 .cct2p3 {
   color: #5e13e5;
   font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .course-card-t2 {
+    gap: 16px;
+    padding: 10px;
+    width: 28%;
+    min-width: 210px;
+    border-radius: 12px;
+  }
+  .cct2-poster {
+    width: 100%;
+    height: 225px;
+  }
+  .cct2-p2 {
+    gap: 16px;
+  }
+  .cct2p2-p1 {
+    gap: 16px;
+  }
+  .cct2p2-p1 div {
+    gap: 4px;
+  }
+  .cct2p2-p1 div img {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .course-card-t2 {
+    gap: 16px;
+    padding: 10px;
+    width: 42%;
+    min-width: 210px;
+    border-radius: 12px;
+  }
+  .cct2-poster {
+    width: 100%;
+    height: 225px;
+  }
+  .cct2-p2 {
+    gap: 16px;
+  }
+  .cct2p2-p1 {
+    gap: 16px;
+  }
+  .cct2p2-p1 div {
+    gap: 4px;
+  }
+  .cct2p2-p1 div img {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .course-card-t2 {
+    gap: 16px;
+    padding: 10px;
+    width: 100%;
+    min-width: 210px;
+    border-radius: 12px;
+  }
+  .cct2-poster {
+    width: 100%;
+    height: 225px;
+  }
+  .cct2-p2 {
+    gap: 16px;
+  }
+  .cct2p2-p1 {
+    gap: 16px;
+  }
+  .cct2p2-p1 div {
+    gap: 4px;
+  }
+  .cct2p2-p1 div img {
+    height: 16px;
+    width: 16px;
+  }
 }

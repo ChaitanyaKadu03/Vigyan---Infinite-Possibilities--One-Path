@@ -1,5 +1,6 @@
 .course-hero {
   gap: 48px;
+  justify-content: space-between;
 }
 
 .ph-p1-p1 {
@@ -56,4 +57,112 @@
   height: 400px;
   width: 480px;
   object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .course-hero {
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .ph-p1-p1 {
+    gap: 8px;
+  }
+  .ph-p1-p1 img {
+    height: 24px;
+    width: 24px;
+  }
+  .ph-p1-p1 div {
+    gap: 4px;
+  }
+  .ph-p1-span {
+    width: 10%;
+  }
+  .ph-p1-p2 {
+    gap: 24px;
+  }
+  .ph-p1-p2 div {
+    gap: 8px;
+  }
+  .ph-p1-p2 div img {
+    height: 24px;
+    width: 24px;
+  }
+  .course-hero-p2 img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .course-hero {
+    gap: 48px;
+    justify-content: space-between;
+  }
+  .ph-p1-p1 {
+    gap: 8px;
+  }
+  .ph-p1-p1 img {
+    height: 24px;
+    width: 24px;
+  }
+  .ph-p1-p1 div {
+    gap: 4px;
+  }
+  .ph-p1-span {
+    width: 10%;
+  }
+  .ph-p1-p2 {
+    gap: 24px;
+  }
+  .ph-p1-p2 div {
+    gap: 8px;
+  }
+  .ph-p1-p2 div img {
+    height: 24px;
+    width: 24px;
+  }
+  .course-hero-p2 img {
+    height: 400px;
+    width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .course-hero {
+    gap: 48px;
+    justify-content: space-between;
+  }
+  .ph-p1-p1 {
+    gap: 8px;
+  }
+  .ph-p1-p1 img {
+    height: 16px;
+    width: 16px;
+  }
+  .ph-p1-p1 div {
+    gap: 4px;
+  }
+  .ph-p1-span {
+    width: 10%;
+  }
+  .ph-p1-p2 {
+    gap: 24px;
+  }
+  .ph-p1-p2 div:last-child {
+    display: none;
+  }
+  .ph-p1-p2 div {
+    gap: 8px;
+  }
+  .ph-p1-p2 div img {
+    height: 16px;
+    width: 16px;
+  }
+  .course-hero-p2 img {
+    height: fit-content;
+    width: 88vw;
+  }
 }

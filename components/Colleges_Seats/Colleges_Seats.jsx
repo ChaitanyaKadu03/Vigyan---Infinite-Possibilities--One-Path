@@ -25,7 +25,7 @@ const Colleges_Seats = () => {
   ];
 
   return (
-    <div className="colleges_seats">
+    <div className="colleges_seats ">
       <h5 className="body-medium-tag">
         Colleges Our Students Have Secured Seats In
       </h5>

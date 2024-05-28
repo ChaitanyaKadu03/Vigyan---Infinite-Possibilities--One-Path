@@ -10,7 +10,7 @@ import course from '../../public/assets/course.svg';
 const Courses_Course = () => {
   let course_card_list = [{ id: 0 }, { id: 1 }, { id: 2 }];
   return (
-    <div className="courses-course">
+    <div className="courses-course standard-padding">
       <div className="courses-course-p1">
         <div className="ccp1-p1">
           <Image src={course} alt="icon" />

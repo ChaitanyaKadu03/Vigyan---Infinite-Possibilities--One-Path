@@ -33,7 +33,7 @@
 
 .play-icon {
   height: 16px;
-  height: 16px;
+  width: 16px;
   padding: 8px;
   border-radius: 100px;
   background-color: #e2e8ff;
@@ -44,29 +44,149 @@
 }
 
 .stats {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
 }
 
 .stats div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .stats div p:first-child {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .stats div p:last-child {
-    color: #afafaf;
+  color: #afafaf;
+}
+
+.line-br {
+  height: 0.4px;
+  width: 24%;
+  background-color: #cbcbcbc6;
 }
 
 .l-h-p2 img {
   height: 480px;
   width: fit-content;
   transform: scaleX(-1);
+}
+
+@media (min-width: 1200px) {
+  .l-h-p1 {
+    gap: 24px;
+    width: 42%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .landing-hero {
+    padding: 0px 64px;
+    height: calc(100vh - 80px);
+  }
+  .l-h-p1 {
+    gap: 24px;
+    width: 412px;
+  }
+  .demo-video {
+    gap: 8px;
+  }
+  .play-icon {
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+  }
+  .stats {
+    gap: 48px;
+  }
+  .stats div {
+    gap: 4px;
+  }
+  .l-h-p2 img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .landing-hero {
+    padding: 56px 64px;
+    height: fit-content;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .l-h-p1 {
+    gap: 24px;
+    width: 380px;
+    align-items: center;
+  }
+  .l-h-p1 h1,
+  .l-h-p1 h2 {
+    text-align: center;
+  }
+  .demo-video {
+    gap: 8px;
+  }
+  .play-icon {
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+  }
+  .line-br {
+    width: 48%;
+    background-color: #cbcbcb88;
+  }
+  .stats {
+    gap: 40px;
+  }
+  .stats div {
+    gap: 4px;
+  }
+  .l-h-p2 img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-hero {
+    padding: 32px 18px;
+    height: fit-content;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .l-h-p1 {
+    gap: 16px;
+    width: 300px;
+    align-items: center;
+  }
+  .l-h-p1 h1,
+  h2 {
+    text-align: center;
+  }
+  .demo-video {
+    gap: 8px;
+  }
+  .play-icon {
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+  }
+  .line-br {
+    width: 48%;
+    background-color: #cbcbcb60;
+  }
+  .stats {
+    gap: 24px;
+  }
+  .stats div {
+    gap: 4px;
+  }
+  .l-h-p2 img {
+    width: 280px;
+    height: fit-content;
+  }
 }

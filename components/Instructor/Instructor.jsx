@@ -13,7 +13,7 @@ const Instructor = () => {
     { id: 3, img: { instagram }, link: '' }
   ];
   return (
-    <div className="instructor-div">
+    <div className="instructor-div standard-padding">
       <div className="instructor-div-p1">
         <h3 className="h3-tag neutral-100">Meet Your Instructor</h3>
         <p className="body-medium-tag neutral-70">

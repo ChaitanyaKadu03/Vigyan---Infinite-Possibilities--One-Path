@@ -31,7 +31,7 @@ const Courses_Home = () => {
         ))}
         <div>
           <Image src={coming_soon} alt="Image" className="chp2-coming-home" />
-          <span className="chp2-div-span" />
+          {/* <span className="chp2-div-span" /> */}
         </div>
       </div>
     </div>
