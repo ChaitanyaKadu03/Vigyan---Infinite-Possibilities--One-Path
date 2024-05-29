@@ -1,5 +1,7 @@
 import '@styles/globals.css';
 import icon from './favicon.ico';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Vigyan - Infinite Possibilities, One Path',
@@ -18,7 +20,11 @@ const RootLayout = ({ children }) => {
         />
       </head>
       <body>
-        <main className="main">{children}</main>
+        <main className="main">
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </main>
       </body>
     </html>
   );
