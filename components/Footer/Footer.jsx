@@ -9,6 +9,7 @@ import x from '../../public/assets/x-white.svg';
 import gmail from '../../public/assets/gmail-white.svg';
 import banner1 from '../../public/assets/course_1.jpg';
 import Course_Card_Data from '@components/Data/Course_Card_Data';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -32,7 +33,12 @@ const Footer = () => {
           <h4 className="h4-tag">Courses</h4>
           <div className="fp1p2-div">
             {Course_Card_Data.map((data) => (
-              <div className="fp1p1d-div" key={data.id}>
+              <Link
+                href={data.link}
+                style={{ textDecoration: 'none' }}
+                className="fp1p1d-div"
+                key={data.id}
+              >
                 <Image src={data.poster} alt="course banner" />
                 <div>
                   <p className="body-medium-tag">{data.heading}</p>
@@ -40,7 +46,7 @@ const Footer = () => {
                     {data.sub_heading}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -48,37 +54,133 @@ const Footer = () => {
           <div className="fp1p3-div">
             <h4 className="h4-tag">Notes</h4>
             <div>
-              <p className="body-small-tag neutral-70">Physics</p>
-              <p className="body-small-tag neutral-70">Chemistry</p>
-              <p className="body-small-tag neutral-70">Mathematics</p>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Physics
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Chemistry
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Mathematics
+              </Link>
             </div>
           </div>
           <div className="fp1p3-div">
             <h4 className="h4-tag">Scroll To</h4>
             <div>
-              <p className="body-small-tag neutral-70">Home</p>
-              <p className="body-small-tag neutral-70">Courses</p>
-              <p className="body-small-tag neutral-70">Instructor</p>
-              <p className="body-small-tag neutral-70">Testimonials</p>
-              <p className="body-small-tag neutral-70">FAQs</p>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Home
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Courses
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Instructor
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Testimonials
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                FAQs
+              </Link>
             </div>
           </div>
           <div className="fp1p3-div">
             <h4 className="h4-tag">Pages</h4>
             <div>
-              <p className="body-small-tag neutral-70">Home</p>
-              <p className="body-small-tag neutral-70">Courses</p>
-              <p className="body-small-tag neutral-70">About Us</p>
-              <p className="body-small-tag neutral-70">Testimonials</p>
-              <p className="body-small-tag neutral-70">FAQs</p>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Home
+              </Link>
+              <Link
+                href={'/courses'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Courses
+              </Link>
+              <Link
+                href={'/about'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                About Us
+              </Link>
+              <Link
+                href={'/testimonials'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Testimonials
+              </Link>
+              <Link
+                href={'/faqs'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                FAQs
+              </Link>
             </div>
           </div>
           <div className="fp1p3-div">
             <h4 className="h4-tag">PYQs</h4>
             <div>
-              <p className="body-small-tag neutral-70">Physics</p>
-              <p className="body-small-tag neutral-70">Chemistry</p>
-              <p className="body-small-tag neutral-70">Mathematics</p>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Physics
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Chemistry
+              </Link>
+              <Link
+                href={'/'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+              >
+                Mathematics
+              </Link>
             </div>
           </div>
         </div>
@@ -89,11 +191,21 @@ const Footer = () => {
           © 2024 Vigyan. All rights reserved.
         </p>
         <div>
-          <Image src={instagram} alt="icon" />
-          <Image src={gmail} alt="icon" />
-          <Image src={linkedin} alt="icon" />
-          <Image src={youtube} alt="icon" />
-          <Image src={x} alt="icon" />
+          <Link href={'/'}>
+            <Image src={instagram} alt="icon" />
+          </Link>
+          <Link href={'/'}>
+            <Image src={gmail} alt="icon" />
+          </Link>
+          <Link href={'/'}>
+            <Image src={linkedin} alt="icon" />
+          </Link>
+          <Link href={'/'}>
+            <Image src={youtube} alt="icon" />
+          </Link>
+          <Link href={'/'}>
+            <Image src={x} alt="icon" />
+          </Link>
         </div>
       </div>
     </div>

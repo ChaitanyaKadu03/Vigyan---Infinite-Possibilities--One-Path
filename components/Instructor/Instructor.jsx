@@ -5,6 +5,7 @@ import Image from 'next/image';
 import linkedln from '../../public/assets/linkedin.svg';
 import meta from '../../public/assets/meta.svg';
 import instagram from '../../public/assets/instagram.svg';
+import Link from 'next/link';
 
 const Instructor = () => {
   const social_media_list = [
@@ -46,15 +47,15 @@ const Instructor = () => {
             academic journey.
           </p>
           <div className='idp2-div-p2'>
-            <button>
+            <Link href={"/"} className='idp2-div-p2-link'>
               <Image src={linkedln} alt="icon" />
-            </button>
-            <button>
+            </Link>
+            <Link href={"/"} className='idp2-div-p2-link'>
               <Image src={meta} alt="icon" />
-            </button>
-            <button>
+            </Link>
+            <Link href={"/"} className='idp2-div-p2-link'>
               <Image src={instagram} alt="icon" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

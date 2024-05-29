@@ -6,12 +6,13 @@ import banner from '../../public/assets/course_1.jpg';
 import clock from '../../public/assets/clock.svg';
 import level from '../../public/assets/level.svg';
 import Course_Card_Data from '@components/Data/Course_Card_Data';
+import Link from 'next/link';
 
 const Course_Card_T1 = ({ id }) => {
   const data = Course_Card_Data[id];
   return (
-    <div className="course-card-t1">
-      <Image src={banner} alt="Course " className="cct1-banner" priority />
+    <Link href={data.link} className="course-card-t1">
+      <Image src={data.poster} alt="Course " className="cct1-banner" priority />
       <div className="course-card-t1-bottom">
         <div className="cct1b-p1">
           <p className="body-small-tag">{data.subject}</p>
@@ -21,12 +22,16 @@ const Course_Card_T1 = ({ id }) => {
         <div className="cct1b-p2">
           <div>
             <Image src={star} alt="star icon" className="cct1b-p2-star" />
-            <p className="body-large-tag">{data.rating}</p>
+            <p className="body-large-tag" style={{ color: '#000' }}>
+              {data.rating}
+            </p>
             <p className="body-medium-tag neutral-70">{data.reviews}</p>
           </div>
           <span className="cct1b-p2-line" />
           <div>
-            <p className="body-large-tag">{data.student}</p>
+            <p className="body-large-tag" style={{ color: '#000' }}>
+              {data.student}
+            </p>
             <p className="body-medium-tag neutral-70">students</p>
           </div>
         </div>
@@ -47,7 +52,7 @@ const Course_Card_T1 = ({ id }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

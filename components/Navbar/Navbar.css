@@ -54,13 +54,8 @@ nav {
 }
 
 .nav-p3 button:last-child {
-  background: linear-gradient(45deg, #5e13e5, #934dff);
-  background-size: 400% 400%;
-  border: #9872db solid 0.4px;
   border-radius: 100px;
   padding: 8px 24px;
-  color: #ffffff;
-  box-shadow: #afafaf2e 0px 4px 16px;
 }
 
 .nav-p3 button:last-child:hover {

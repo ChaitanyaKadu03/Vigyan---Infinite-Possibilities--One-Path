@@ -4,7 +4,7 @@ import './Navbar.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../public/assets/Logo/Transparent/Logo-Transparent(1).png';
-import menu from '../../public/assets/menu.svg'
+import menu from '../../public/assets/menu.svg';
 
 const Navbar = ({ id }) => {
   const nav_mid_btns_list = [
@@ -33,9 +33,11 @@ const Navbar = ({ id }) => {
 
   return (
     <nav>
-      <Image src={menu} alt="menu icon" className='nav-menu'/>
-      <Image src={Logo} alt="Vigyan logo" className='nav-logo'/>
-      <div className='nav-p2'>
+      <Image src={menu} alt="menu icon" className="nav-menu" />
+      <Link href={'/'}>
+        <Image src={Logo} alt="Vigyan logo" className="nav-logo" />
+      </Link>
+      <div className="nav-p2">
         {nav_mid_btns.map((data) => (
           <Link
             key={data.id}
@@ -50,9 +52,9 @@ const Navbar = ({ id }) => {
           </Link>
         ))}
       </div>
-      <div className='nav-p3'>
+      <div className="nav-p3">
         <button className="body-medium-tag">Log In</button>
-        <button className="body-medium-tag">Sign Up</button>
+        <button className="body-medium-tag button-33">Sign Up</button>
       </div>
     </nav>
   );

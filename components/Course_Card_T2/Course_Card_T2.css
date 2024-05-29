@@ -8,6 +8,7 @@
   border: 0.4px solid #b9b9b94b;
   box-shadow: 0 2px 16px #b9b9b94b;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cct2-poster {

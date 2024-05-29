@@ -30,10 +30,10 @@ const Course_Hero = ({ id }) => {
             <p className="body-medium-tag neutral-70">students</p>
           </div>
         </div>
-        <div className="demo-video">
+        <a href="https://www.netflix.com/in/" className="demo-video" passHref>
           <Image src={play} alt="icon" className="play-icon" />
           <p className="body-medium-tag">Demo Video</p>
-        </div>
+        </a>
         <span className="ph-p1-span" />
         <div className="ph-p1-p2">
           <div>

@@ -38,10 +38,10 @@ const Landing_Hero = () => {
         <h2 className="body-large-tag">
           Master Physics with Expert-led Courses for JEE, NEET, and Beyond
         </h2>
-        <div className="demo-video">
+        <a href='https://www.netflix.com/in/' className="demo-video" passHref>
           <Image src={play} alt="icon" className="play-icon" />
           <p className="body-medium-tag">Demo Video</p>
-        </div>
+        </a>
         <span className="line-br" />
         <div className="stats">
           {stats_data.map((data) => {

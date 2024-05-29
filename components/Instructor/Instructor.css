@@ -43,12 +43,12 @@
   gap: 8px;
 }
 
-.idp2-div-p2 button {
+.idp2-div-p2-link {
   background: none;
   border: none;
 }
 
-.idp2-div-p2 button img {
+.idp2-div-p2-link img {
   height: fit-content;
   width: 24px;
   object-fit: cover;
@@ -81,7 +81,7 @@
   .idp2-div-p2 {
     gap: 8px;
   }
-  .idp2-div-p2 button img {
+  .idp2-div-p2-link img {
     width: 24px;
   }
 }
@@ -115,7 +115,7 @@
   .idp2-div-p2 {
     gap: 8px;
   }
-  .idp2-div-p2 button img {
+  .idp2-div-p2-link img {
     width: 24px;
   }
 }
@@ -149,7 +149,7 @@
   .idp2-div-p2 {
     gap: 8px;
   }
-  .idp2-div-p2 button img {
+  .idp2-div-p2-link img {
     width: 24px;
   }
 }

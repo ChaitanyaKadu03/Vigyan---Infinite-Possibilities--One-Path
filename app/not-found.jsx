@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '@components/Navbar/Navbar';
 import Footer from '@components/Footer/Footer';
-import img from '../public/assets/404.png';
+import img from '../public/assets/404.svg';
 import Image from 'next/image';
 
 const Home = () => {

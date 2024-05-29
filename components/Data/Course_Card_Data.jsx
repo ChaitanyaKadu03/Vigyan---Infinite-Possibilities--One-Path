@@ -2,6 +2,7 @@ import img from '../../public/assets/teacher 2.jpg';
 import poster1 from '../../public/assets/course_1.jpg'
 import poster2 from '../../public/assets/course_2.jpg'
 import poster3 from '../../public/assets/course_4.jpg'
+import Link from 'next/link';
 
 const Course_Card_Data = [
   {
@@ -19,7 +20,8 @@ const Course_Card_Data = [
     content: '86 Hours',
     level: 'Beginners ',
     lessons: '12+ lessons',
-    poster: poster1
+    poster: poster1,
+    link: '/courses/basics-of-physics'
   },
   {
     id: 2,
@@ -36,7 +38,8 @@ const Course_Card_Data = [
     content: '58 Hours',
     level: 'Beginners ',
     lessons: '10+ lessons',
-    poster: poster2
+    poster: poster2,
+    link: '/courses/electostatics'
   },
   {
     id: 3,
@@ -53,7 +56,8 @@ const Course_Card_Data = [
     content: '18 Hours',
     level: 'Beginners ',
     lessons: '8+ lessons',
-    poster: poster3
+    poster: poster3,
+    link: 'courses/motion-in-one-dimension'
   }
 ];
 
