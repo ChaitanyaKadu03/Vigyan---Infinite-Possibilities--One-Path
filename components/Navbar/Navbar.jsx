@@ -37,6 +37,7 @@ const Navbar = ({ id }) => {
 
   let [coursebtnclick, setcoursebtnclick] = useState(false);
   const dropdownRef = useRef(null);
+  const dropdownRef1 = useRef(null);
 
   const handleDropdown = () => {
     setcoursebtnclick(!coursebtnclick);
@@ -45,6 +46,9 @@ const Navbar = ({ id }) => {
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setcoursebtnclick(false);
+    }
+    if (dropdownRef1.current && !dropdownRef1.current.contains(event.target)) {
+      setnavbaropen(false);
     }
   };
 
@@ -72,10 +76,12 @@ const Navbar = ({ id }) => {
           onClick={() => {
             naviconclick();
           }}
+          ref={dropdownRef1}
         />
         <ul
           className="navbar_mob"
           style={{ display: navbaropen ? '' : 'none' }}
+          ref={dropdownRef1}
         >
           <li>
             {id == 1 ? <Image src={dot} alt="icn" className="nav-dot" /> : ''}
@@ -93,7 +99,7 @@ const Navbar = ({ id }) => {
             onClick={() => {
               handleDropdown();
             }}
-            ref={dropdownRef}
+            ref={dropdownRef1}
           >
             {id == 2 ? <Image src={dot} alt="icn" className="nav-dot" /> : ''}
             <Link
