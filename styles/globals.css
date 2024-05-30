@@ -158,21 +158,6 @@
   transform: scale(1.05) rotate(-1deg);
 }
 
-.animate {
-  animation: slideIn 1s forwards;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(120px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @media (min-width: 1200px) {
   .button-33 {
     padding: 12px 24px;
@@ -289,20 +274,7 @@
     width: fit-content;
   }
 
-  .animate {
-    animation: slideIn 1s forwards;
-  }
-
-  @keyframes slideIn {
-    0% {
-      transform: translateY(80px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+ 
 }
 
 /* Set A */
