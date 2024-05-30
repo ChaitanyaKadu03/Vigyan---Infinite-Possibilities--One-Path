@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '@components/Navbar/Navbar';
+import Nav_sec from '@components/Navbar/Navbar';
 import Footer from '@components/Footer/Footer';
 import img from '../public/assets/404.svg';
 import Image from 'next/image';
@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Home = () => {
   return (
     <>
-      <Navbar id={1} />
+      <Nav_sec id={1} />
       <Image
         src={img}
         alt="Page not found. 404 Error."

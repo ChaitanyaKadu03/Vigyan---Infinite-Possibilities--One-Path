@@ -23,7 +23,7 @@ const Landing_Hero = () => {
     {
       id: 3,
       type: 'Views',
-      count: '5k+',
+      count: '5k',
       suffix: ' +'
     }
   ];

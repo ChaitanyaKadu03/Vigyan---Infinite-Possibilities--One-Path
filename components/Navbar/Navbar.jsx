@@ -68,7 +68,7 @@ const Navbar = ({ id }) => {
 
   return (
     <nav>
-      <div className="nav-menu">
+      <div className="nav-menu" ref={dropdownRef1}>
         <Image
           src={menu}
           alt="menu icon"
@@ -76,7 +76,6 @@ const Navbar = ({ id }) => {
           onClick={() => {
             naviconclick();
           }}
-          ref={dropdownRef1}
         />
         <ul
           className="navbar_mob"
@@ -218,7 +217,7 @@ const Navbar = ({ id }) => {
               color: id == 4 || id == 5 || id == 6 ? '#e8e8e8' : '#afafaf'
             }}
           >
-            {nav_mid_btns_list[id - 1].btn}
+            {id < 4 ? 'Testimonials' : nav_mid_btns_list[id - 1].btn}
           </Link>
         </li>
       </ul>

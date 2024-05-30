@@ -49,7 +49,7 @@ const Courses_Home = () => {
       </div>
       <div className="courses-home-p2">
         {course_card_list.map((num) => (
-          <Course_Card_T1 id={num.id} />
+          <Course_Card_T1 id={num.id} key={num.id}/>
         ))}
         <div>
           <Image src={coming_soon} alt="Image" className="chp2-coming-home" />

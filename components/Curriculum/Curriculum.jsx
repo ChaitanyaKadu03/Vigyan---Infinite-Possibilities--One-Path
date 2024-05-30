@@ -168,7 +168,7 @@ const Curriculum = ({ id }) => {
                     target="_blank"
                   >
                     <div>
-                      <Image src={youtube_grey} alt="icon" />
+                      <Image src={youtube_orange} alt="icon" />
                       <p className="body-large-tag grey">{prompt.position}</p>
                       <p className="body-large-tag grey">{prompt.title}</p>
                     </div>

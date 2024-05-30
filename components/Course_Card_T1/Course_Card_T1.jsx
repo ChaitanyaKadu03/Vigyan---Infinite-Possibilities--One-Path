@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Course_Card_T1 = ({ id }) => {
   const data = Course_Card_Data[id];
   return (
-    <Link href={data.link} className="course-card-t1">
+    <Link href={data.link} className="course-card-t1" key={data.id}>
       <Image src={data.poster} alt="Course " className="cct1-banner" priority />
       <div className="course-card-t1-bottom">
         <div className="cct1b-p1">

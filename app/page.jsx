@@ -1,7 +1,7 @@
 import React from 'react';
 import Colleges_Seats from '@components/Colleges_Seats/Colleges_Seats';
 import Landing_Hero from '@components/Landing_Hero/Landing_Hero';
-import Navbar from '@components/Navbar/Navbar';
+import Nav_sec from '@components/Navbar/Navbar';
 import Courses_Home from '@components/Courses_Home/Courses_Home';
 import Instructor from '@components/Instructor/Instructor';
 import Testimonials from '@components/Testimonials/Testimonials';
@@ -11,7 +11,7 @@ import Footer from '@components/Footer/Footer';
 const Home = () => {
   return (
     <>
-      <Navbar id={1} />
+      <Nav_sec id={1} />
       <div className="nav-space" />
       <Landing_Hero />
       <Colleges_Seats />
