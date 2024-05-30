@@ -1,7 +1,7 @@
 import contact from '../../public/assets/contact hero.png';
 import faq from '../../public/assets/faq hero.png';
 import testimonial from '../../public/assets/testimonials hero.png';
-import courses from '../../public/assets/courses hero.svg';
+import courses from '../../public/assets/Courses hero.svg';
 import about from '../../public/assets/about hero.png';
 
 const Pages_Hero_Data = [
