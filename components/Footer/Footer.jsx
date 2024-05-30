@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useRef } from 'react';
 import './Footer.css';
 import Image from 'next/image';
 import logo from '../../public/assets/Logo/Transparent/Logo-Transparent(4).png';
@@ -12,8 +13,31 @@ import Course_Card_Data from '@components/Data/Course_Card_Data';
 import Link from 'next/link';
 
 const Footer = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target); 
+        }
+      },
+      { threshold: 0.1 } 
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   return (
-    <div className="footer">
+    <div className="footer" ref={sectionRef}>
       <div className="footer-p1">
         <div className="fp1-p1">
           <Image src={logo} alt="logo" />
@@ -41,7 +65,9 @@ const Footer = () => {
               >
                 <Image src={data.poster} alt="course banner" />
                 <div>
-                  <p className="body-medium-tag">{data.heading}</p>
+                  <p className="body-medium-tag fp1p1d-div-heading">
+                    {data.heading}
+                  </p>
                   <p className="body-small-tag neutral-70">
                     {data.sub_heading}
                   </p>
@@ -78,42 +104,30 @@ const Footer = () => {
             </div>
           </div>
           <div className="fp1p3-div">
-            <h4 className="h4-tag">Scroll To</h4>
+            <h4 className="h4-tag">Others</h4>
             <div>
               <Link
-                href={'/'}
+                href={'https://www.youtube.com/watch?v=wd2gVNavLCo'}
                 style={{ textDecoration: 'none' }}
                 className="body-small-tag neutral-70"
+                target="_blank"
               >
-                Home
+                Demo Video
+              </Link>
+              <Link
+                href={'https://www.youtube.com/@VigyanJeeSandeepRoy'}
+                style={{ textDecoration: 'none' }}
+                className="body-small-tag neutral-70"
+                target="_blank"
+              >
+                Youtube
               </Link>
               <Link
                 href={'/'}
                 style={{ textDecoration: 'none' }}
                 className="body-small-tag neutral-70"
               >
-                Courses
-              </Link>
-              <Link
-                href={'/'}
-                style={{ textDecoration: 'none' }}
-                className="body-small-tag neutral-70"
-              >
-                Instructor
-              </Link>
-              <Link
-                href={'/'}
-                style={{ textDecoration: 'none' }}
-                className="body-small-tag neutral-70"
-              >
-                Testimonials
-              </Link>
-              <Link
-                href={'/'}
-                style={{ textDecoration: 'none' }}
-                className="body-small-tag neutral-70"
-              >
-                FAQs
+                Sandeep Roy
               </Link>
             </div>
           </div>
@@ -135,7 +149,7 @@ const Footer = () => {
                 Courses
               </Link>
               <Link
-                href={'/about'}
+                href={'/about-us'}
                 style={{ textDecoration: 'none' }}
                 className="body-small-tag neutral-70"
               >

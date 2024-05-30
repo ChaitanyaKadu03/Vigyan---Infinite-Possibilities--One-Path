@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar id={2} />
       <Pages_Hero id={3} />
       <Courses_Course />
-      <Testimonials />
+      <Testimonials id={0} />
       <Faqs />
       <Footer />
     </>

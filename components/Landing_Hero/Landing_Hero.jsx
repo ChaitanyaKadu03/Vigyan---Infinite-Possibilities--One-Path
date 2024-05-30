@@ -2,7 +2,7 @@
 import React, { useState, useInterval, useEffect } from 'react';
 import './Landing_Hero.css';
 import Image from 'next/image';
-import teacher from '../../public/assets/teacher-1.png';
+import hero_img from '../../public/assets/Home hero.svg';
 import play from '../../public/assets/play.svg';
 import orange from '../../public/assets/Svg shape/orange.svg';
 
@@ -38,7 +38,7 @@ const Landing_Hero = () => {
         <h2 className="body-large-tag">
           Master Physics with Expert-led Courses for JEE, NEET, and Beyond
         </h2>
-        <a href='https://www.netflix.com/in/' className="demo-video" passHref>
+        <a href='https://www.youtube.com/watch?v=wd2gVNavLCo' className="demo-video" passHref>
           <Image src={play} alt="icon" className="play-icon" />
           <p className="body-medium-tag">Demo Video</p>
         </a>
@@ -57,7 +57,7 @@ const Landing_Hero = () => {
         </div>
       </div>
       <div className="l-h-p2">
-        <Image src={teacher} alt="Sandeep Roy" priority />
+        <Image src={hero_img} alt="Sandeep Roy" priority />
       </div>
     </div>
   );

@@ -73,8 +73,9 @@
 }
 
 .l-h-p2 img {
-  height: 480px;
-  width: fit-content;
+  height: fit-content;
+  width: 40vw;
+  max-width: 640px;
   transform: scaleX(-1);
 }
 

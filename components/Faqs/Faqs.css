@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  opacity: 0;
 }
 
 .faqs-p1 {
@@ -56,6 +57,18 @@
   border: #d6d6d670 solid 0.6px;
   box-shadow: 0 2px 16px #e1e1e176;
   cursor: pointer;
+  animation: slidedownans 0.4s ease-in;
+}
+
+@keyframes slidedownans {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1200px) {

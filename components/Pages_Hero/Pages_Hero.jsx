@@ -15,7 +15,7 @@ const Pages_Hero = ({ id }) => {
           dangerouslySetInnerHTML={{ __html: data.Heading }}
         ></h1>
         <h2 className="body-large-tag neutral-70">{data.Paragraph}</h2>
-        <a href='https://www.netflix.com/in/' className="demo-video" passHref>
+        <a href='https://www.youtube.com/watch?v=wd2gVNavLCo' className="demo-video" passHref>
           <Image src={play} alt="icon" className="play-icon" />
           <p className="body-medium-tag">Demo Video</p>
         </a>

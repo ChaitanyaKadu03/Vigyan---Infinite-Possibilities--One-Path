@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useRef } from 'react';
 import './Instructor.css';
 import teacher from '../../public/assets/teacher 2.jpg';
 import Image from 'next/image';
@@ -8,13 +9,36 @@ import instagram from '../../public/assets/instagram.svg';
 import Link from 'next/link';
 
 const Instructor = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);  
+        }
+      },
+      { threshold: 0.1 }  
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   const social_media_list = [
     { id: 1, img: { linkedln }, link: '' },
     { id: 2, img: { meta }, link: '' },
     { id: 3, img: { instagram }, link: '' }
   ];
   return (
-    <div className="instructor-div standard-padding">
+    <div className="instructor-div standard-padding" ref={sectionRef}>
       <div className="instructor-div-p1">
         <h3 className="h3-tag neutral-100">Meet Your Instructor</h3>
         <p className="body-medium-tag neutral-70">

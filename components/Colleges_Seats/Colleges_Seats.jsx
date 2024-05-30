@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useRef } from 'react';
 import './Colleges_Seats.css';
 import img1 from '../../public/assets/college/1.png';
 import img2 from '../../public/assets/college/2.png';
@@ -12,6 +13,29 @@ import img9 from '../../public/assets/college/9.png';
 import Image from 'next/image';
 
 const Colleges_Seats = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);  
+        }
+      },
+      { threshold: 0.1 }  
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   const colleges_img = [
     { id: 1, img: img1 },
     { id: 2, img: img2 },
@@ -25,7 +49,7 @@ const Colleges_Seats = () => {
   ];
 
   return (
-    <div className="colleges_seats ">
+    <div className="colleges_seats " ref={sectionRef}>
       <h5 className="body-medium-tag">
         Colleges Our Students Have Secured Seats In
       </h5>

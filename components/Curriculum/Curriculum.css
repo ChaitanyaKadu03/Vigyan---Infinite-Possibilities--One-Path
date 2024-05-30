@@ -2,11 +2,27 @@
   display: flex;
   flex-direction: row;
   gap: 24px;
+  opacity: 0;
+}
+
+.curriculum-soon-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curriculum-soon-img {
+  height: fit-content;
+  width: 30vw;
+  max-width: 560px;
+  opacity: 0.6;
+  padding: 40px 0 0;
 }
 
 .curriculum-p1 {
   display: flex;
   flex-direction: column;
+  height: fit-content;
   gap: 40px;
   padding: 40px;
   width: 68%;
@@ -29,9 +45,18 @@
   align-items: center;
 }
 
+.cp1p1-p1 p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
 .cp1p1-p1 img {
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
+  transition: transform 0.3s ease;
 }
 
 .cp1p1-p2 {
@@ -77,6 +102,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  cursor: pointer;
 }
 
 .cp1p2p1-p1 {
@@ -100,6 +126,7 @@
 .cp1p2p1p1-div img {
   height: 16px;
   width: 16px;
+  transition: transform 0.4s ease;
 }
 
 .cp1p2p1p1-div2 {
@@ -132,6 +159,19 @@
   gap: 24px;
   padding: 24px 32px;
   border-radius: 12px;
+  animation: slideDowncp1p2p1-p2 0.4s linear;
+  position: relative;
+}
+
+@keyframes slideDowncp1p2p1-p2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .cp1p2p1p2-div {
@@ -139,6 +179,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+  color: #afafaf;
 }
 
 .cp1p2p1p2-div img {
@@ -154,22 +196,33 @@
   gap: 16px;
 }
 
+.cp1p2p1p2-div div p:last-child {
+}
+
 .curriculum-p2 {
   display: flex;
   flex-direction: column;
   padding: 36px;
   gap: 32px;
-  width: fit-content;
+  width: 260px;
   height: fit-content;
   border-radius: 12px;
   border: #dfdfdfbd solid 0.6px;
   box-shadow: #dfdfdfe1 0px 0px 24px;
 }
 
+.cp2-p1-poster {
+  border-radius: 12px;
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+}
+
 .cp2-p1 {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: fit-content;
 }
 
 .cp2p1-div {
@@ -270,7 +323,14 @@
   }
   .curriculum-p2 {
     padding: 28px;
-    gap: 32px;
+    gap: 24px;
+    width: 220px;
+  }
+  .cp2-p1-poster {
+    border-radius: 12px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
   }
   .cp2-p1 {
     gap: 16px;
@@ -302,8 +362,8 @@
     gap: 16px;
   }
   .cp1p1-p1 img {
-    height: 16px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
   }
   .cp1p1-p2 img {
     height: 16px;
@@ -365,11 +425,17 @@
     gap: 12px;
   }
   .curriculum-p2 {
-    padding: 28px;
-    gap: 32px;
+    padding: 24px;
+    gap: 16px;
     flex-direction: row;
-    width: fit-content;
+    width: 100%;
     justify-content: space-between;
+  }
+  .cp2-p1-poster {
+    border-radius: 12px;
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
   }
   .cp2-p1 {
     gap: 16px;
@@ -393,17 +459,21 @@
     align-items: center;
     margin: 0 20px;
   }
+  .curriculum-soon-img {
+    width: 72%;
+    padding: 40px 0 0;
+  }
   .curriculum-p1 {
     gap: 24px;
-    padding: 24px 12px ;
+    padding: 24px 12px;
     width: 100%;
   }
   .cp1-p1 {
     gap: 16px;
   }
   .cp1p1-p1 img {
-    height: 16px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
   }
   .cp1p1-p2 img {
     height: 16px;
@@ -471,8 +541,14 @@
     gap: 8px;
   }
   .curriculum-p2 {
-    padding: 28px;
+    padding: 20px;
     gap: 24px;
+  }
+  .cp2-p1-poster {
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
   .cp2-p1 {
     gap: 16px;

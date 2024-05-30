@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Navbar id={4} />
       <Pages_Hero id={2} />
-      <Testimonials />
+      <Testimonials id={1} />
       <Footer />
     </>
   );

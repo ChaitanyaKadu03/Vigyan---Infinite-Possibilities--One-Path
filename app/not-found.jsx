@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Home = () => {
   return (
     <>
-      <Navbar id={0} />
+      <Navbar id={1} />
       <Image
         src={img}
         alt="Page not found. 404 Error."

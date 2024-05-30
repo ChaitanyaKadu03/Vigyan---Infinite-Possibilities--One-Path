@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  opacity: 0;
 }
 
 .testimonials-p1 {
@@ -50,6 +51,7 @@
     row-gap: 24px;
     column-gap: 24px;
     justify-content: center;
+    max-width: 800px;
   }
 }
 
@@ -65,5 +67,7 @@
     row-gap: 20px;
     column-gap: 24px;
     justify-content: center;
+    max-width: 800px;
+    overflow: hidden;
   }
 }

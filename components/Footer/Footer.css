@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 40px 128px;
+  opacity: 0;
 }
 
 .footer-p1 {
@@ -45,16 +46,22 @@
 .fp1p1d-div {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 8px;
   border-radius: 12px;
-  background: #8a8a8a4c;
   transition: background 0.4s;
   padding: 12px;
   width: 356px;
 }
 
+.fp1p1d-div-heading {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .fp1p1d-div:hover {
-  background: #8a8a8a76;
+  background: #37374d;
   transition: background 0.4s;
 }
 

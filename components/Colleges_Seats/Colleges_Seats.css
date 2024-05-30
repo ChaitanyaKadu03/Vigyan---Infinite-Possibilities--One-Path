@@ -6,6 +6,7 @@
   padding: 72px 0px;
   margin: 0 128px;
   overflow: hidden;
+  opacity: 0;
 }
 
 .colleges_seats h5 {

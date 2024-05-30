@@ -9,6 +9,7 @@
   box-shadow: 0 2px 16px #b9b9b94b;
   cursor: pointer;
   text-decoration: none;
+  background: #fff;
 }
 
 .cct2-poster {
@@ -111,7 +112,7 @@
   .course-card-t2 {
     gap: 16px;
     padding: 10px;
-    width: 100%;
+    width: 82%;
     min-width: 210px;
     border-radius: 12px;
   }

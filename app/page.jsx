@@ -16,7 +16,7 @@ const Home = () => {
       <Colleges_Seats />
       <Courses_Home />
       <Instructor />
-      <Testimonials />
+      <Testimonials id={0} />
       <Faqs />
       <Footer />
     </>

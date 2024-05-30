@@ -9,6 +9,8 @@
   cursor: pointer;
   box-shadow: rgba(119, 119, 119, 0.28) 0 4px 16px;
   text-decoration: none;
+  overflow: hidden;
+  background: #fff;
 }
 
 .course-card-t1:hover {

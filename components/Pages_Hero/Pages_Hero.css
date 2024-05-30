@@ -12,7 +12,9 @@
 }
 
 .pages-hero-p1 h1 {
-  color: #fff;
+  background: linear-gradient(to top, #b6b6b6, #e8e8e8);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .pages-hero-p2 img {

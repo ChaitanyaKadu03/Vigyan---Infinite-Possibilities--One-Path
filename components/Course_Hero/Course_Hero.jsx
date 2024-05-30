@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import img from '../../public/assets/course hero.png';
+import img from '../../public/assets/Course hero.svg';
 import '../Landing_Hero/Landing_Hero.css';
 import '../Pages_Hero/Pages_Hero.css';
 import './Course_Hero.css';
@@ -30,7 +30,7 @@ const Course_Hero = ({ id }) => {
             <p className="body-medium-tag neutral-70">students</p>
           </div>
         </div>
-        <a href="https://www.netflix.com/in/" className="demo-video" passHref>
+        <a href={data.demo_video} target='_blank' className="demo-video" passHref>
           <Image src={play} alt="icon" className="play-icon" />
           <p className="body-medium-tag">Demo Video</p>
         </a>
