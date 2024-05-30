@@ -1,7 +1,7 @@
-import img from '../../public/assets/teacher 2.jpg';
-import poster1 from '../../public/assets/course_1.jpg'
-import poster2 from '../../public/assets/course_2.jpg'
-import poster3 from '../../public/assets/course_4.jpg'
+import img from '../../public/assets/teacher-1.png';
+import poster1 from '../../public/assets/course 1.png'
+import poster2 from '../../public/assets/course 2.png'
+import poster3 from '../../public/assets/course 3.png'
 import Link from 'next/link';
 
 const Course_Card_Data = [

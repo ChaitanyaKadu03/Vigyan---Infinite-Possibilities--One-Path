@@ -14,7 +14,7 @@ import play from '../../public/assets/play.svg';
 const Course_Hero = ({ id }) => {
   const data = Course_Card_Data[id];
   return (
-    <div className="course-hero pages-hero blackish-gradient">
+    <div className="course-hero pages-hero blackish-gradient nav-space-top">
       <div className="course-hero-p1 pages-hero-p1">
         <h1 className="h1-tag grey-gradient-font">{data.heading}</h1>
         <h2 className="body-large-tag neutral-70">{data.paragraph}</h2>

@@ -22,14 +22,14 @@ const Landing_Hero = () => {
     },
     {
       id: 3,
-      type: 'Watch Time',
-      count: 326,
+      type: 'Views',
+      count: '5k+',
       suffix: ' +'
     }
   ];
 
   return (
-    <div className="landing-hero">
+    <div className="landing-hero nav-space-top">
       <div className="l-h-p1">
         <h1 className="h1-tag">
           Infinite <span className="grey-gradient-font">Possibilities</span>{' '}

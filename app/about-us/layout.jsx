@@ -1,14 +1,14 @@
 import '@styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import poster3 from '../public/assets/course 3.png';
+import img from '../../public/assets/teacher-1.png';
 
 export const metadata = {
-  title: 'Vigyan - Infinite Possibilities, One Path',
-  description: `Prepare for the JEE exams with our Advanced Physics course, designed specifically for Indian students. Dive deep into complex topics and master the skills needed to excel in one of India's toughest entrance exams. Our platform, led by ex-IITians, offers the best guidance, study materials, and strategies to help you succeed. Join the best platform for JEE preparation and achieve your dreams of getting into IIT.`,
+  title: 'About Us - Advanced Physics for JEE',
+  description: `Learn more about our mission to help Indian students excel in JEE exams through comprehensive Advanced Physics courses and expert-led lectures. Our team of ex-IITians from Kota provides the best platform for JEE preparation, ensuring personalized attention and the highest quality education. Discover how we are making a difference in the lives of aspiring IITians.`,
   keywords:
-    'JEE, JEE preparation, Advanced Physics, Physics course, JEE Physics, Indian students, JEE entrance exams, ex-IITian, best platform, IIT, Kota, best JEE coaching, Physics for JEE',
-  image: poster3
+    'JEE, JEE preparation, Advanced Physics, Physics course, JEE Physics, Indian students, JEE entrance exams, ex-IITian, best platform, IIT, Kota, best JEE coaching, Physics for JEE, About us, Advanced Physics, JEE preparation, Indian students, Physics education, JEE exams',
+  image: img
 };
 
 const RootLayout = ({ children }) => {

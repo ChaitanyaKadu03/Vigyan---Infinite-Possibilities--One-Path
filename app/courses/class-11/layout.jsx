@@ -1,14 +1,14 @@
 import '@styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import poster3 from '../public/assets/course 3.png';
+import poster1 from '../../../public/assets/course 1.png'
 
 export const metadata = {
-  title: 'Vigyan - Infinite Possibilities, One Path',
-  description: `Prepare for the JEE exams with our Advanced Physics course, designed specifically for Indian students. Dive deep into complex topics and master the skills needed to excel in one of India's toughest entrance exams. Our platform, led by ex-IITians, offers the best guidance, study materials, and strategies to help you succeed. Join the best platform for JEE preparation and achieve your dreams of getting into IIT.`,
+  title: 'Class 11th - Physics Concept Course',
+  description: `Lay a solid foundation in physics with key concepts and principles. Ideal for beginners and those looking to reinforce their basics.`,
   keywords:
-    'JEE, JEE preparation, Advanced Physics, Physics course, JEE Physics, Indian students, JEE entrance exams, ex-IITian, best platform, IIT, Kota, best JEE coaching, Physics for JEE',
-  image: poster3
+    'JEE, JEE preparation, Advanced Physics, Physics course, JEE Physics, Indian students, JEE entrance exams, ex-IITian, best platform, IIT, Kota, best JEE coaching, Physics for JEE, Courses, Advanced Physics, JEE preparation, Indian students, Physics education, JEE exams',
+  image: poster1
 };
 
 const RootLayout = ({ children }) => {

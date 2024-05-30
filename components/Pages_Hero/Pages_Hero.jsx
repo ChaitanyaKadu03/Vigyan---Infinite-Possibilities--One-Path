@@ -8,7 +8,7 @@ import play from '../../public/assets/play.svg';
 const Pages_Hero = ({ id }) => {
   let data = Pages_Hero_Data[id];
   return (
-    <div className="pages-hero blackish-gradient">
+    <div className="pages-hero blackish-gradient nav-space-top">
       <div className="pages-hero-p1">
         <h1
           className="h1-tag"

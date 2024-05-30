@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <>
       <Navbar id={1} />
+      <div className="nav-space" />
       <Landing_Hero />
       <Colleges_Seats />
       <Courses_Home />

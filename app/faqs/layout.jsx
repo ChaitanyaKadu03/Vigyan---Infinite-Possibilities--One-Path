@@ -1,14 +1,12 @@
 import '@styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import poster3 from '../public/assets/course 3.png';
 
 export const metadata = {
-  title: 'Vigyan - Infinite Possibilities, One Path',
-  description: `Prepare for the JEE exams with our Advanced Physics course, designed specifically for Indian students. Dive deep into complex topics and master the skills needed to excel in one of India's toughest entrance exams. Our platform, led by ex-IITians, offers the best guidance, study materials, and strategies to help you succeed. Join the best platform for JEE preparation and achieve your dreams of getting into IIT.`,
+  title: 'FAQs - Advanced Physics for JEE Preparation',
+  description: `Find answers to frequently asked questions about our Advanced Physics course and how it helps Indian students prepare for JEE exams. Learn more about our teaching methodology, the benefits of studying with ex-IITians, and why our platform is the best choice for JEE aspirants from Kota and beyond.`,
   keywords:
-    'JEE, JEE preparation, Advanced Physics, Physics course, JEE Physics, Indian students, JEE entrance exams, ex-IITian, best platform, IIT, Kota, best JEE coaching, Physics for JEE',
-  image: poster3
+    'JEE, JEE preparation, Advanced Physics, Physics course, JEE Physics, Indian students, JEE entrance exams, FAQs, Frequently Asked Questions, JEE preparation, Advanced Physics, Indian students, JEE exams'
 };
 
 const RootLayout = ({ children }) => {
