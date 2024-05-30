@@ -1,6 +1,6 @@
-import poster1 from '../../public/assets/course 1.png'
-import poster2 from '../../public/assets/course 2.png'
-import poster3 from '../../public/assets/course 3.png'
+import poster1 from '../../public/assets/Course-1-Banner.png'
+import poster2 from '../../public/assets/Course-2-Banner.png'
+import poster3 from '../../public/assets/Course-3-Banner.png'
 
 const Course_Curriculum_Data = [
   {
