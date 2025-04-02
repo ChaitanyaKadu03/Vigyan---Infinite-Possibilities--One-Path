@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
 import './Instructor.css';
-import teacher from '../../public/assets/teacher 2.jpg';
+import teacher from '../../public/assets/teacher 2.png';
 import Image from 'next/image';
 import linkedln from '../../public/assets/linkedin.svg';
 import meta from '../../public/assets/meta.svg';

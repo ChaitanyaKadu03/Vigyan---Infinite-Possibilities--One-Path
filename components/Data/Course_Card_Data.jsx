@@ -52,7 +52,7 @@ const Course_Card_Data = [
     paragraph: `Dive deep into complex topics and master the skills needed to excel in one of India's toughest entrance exams.`,
     rating: '5.0',
     reviews: '(89+ reviews)',
-    student: '000+',
+    student: '820+',
     teacher_img: img,
     teacher_name: 'Sandeep Roy',
     content: '42+ Hours',
